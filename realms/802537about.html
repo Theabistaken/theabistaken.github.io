@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<head>
+<style>
+body {
+  margin: 0;
+  background-color: Ghostwhite;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: gainsboro;
+}
+
+.topnav a {
+  float: left;
+  color: darkslategray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: lightslategray;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: mediumvioletred;
+  color: white;
+}
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: mediumvioletred;
+}
+</style>
+</head>
+<body>
+  <div class="topnav">
+    <a href="index.html">
+      <img src="https://theabistaken.github.io/path1.svg" alt="Logo of the institute" style="height:23px; width:23px;">
+    </a>
+    <a href="https://theabistaken.github.io/index.html">Home</a>
+    <a class="active" href="https://theabistaken.github.io/realms/index.html">Realm Specific Pages</a>
+    <a href="https://theabistaken.github.io/contact.html">Contact</a>
+    <a href="https://theabistaken.github.io/org.html">About</a>
+  </div>
+  <div style="margin-left:3vw;">
+    <h1>
+      Realm Archive 802537 Team.
+    </h1>
+    <p>
+      Below are the members of the archive. Each staff member has been curated with high rigor and extensive interview.
+    </p>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="Ashley.jpg" alt="Ashley" style="width:100%">
+          <div class="container">
+            <h2>Ashley Venetia Ellsworth</h2>
+            <p class="title">Researcher &amp; Amatuer Novelist</p>
+            <p>Ashley is a diligent researcher with several years of experience and diverse skills. Her special interest domain is late 3nd Millenia Infernal culture. She is a wonderful influence on the office, and her storytelling prowess keeps morale high.</p>
+            <p>Ash_E@contact.macguff.org</p>
+            <p><a href="802537contact.html"><button class="button">Contact</button></a>></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="Amadeus.jpg" alt="Sir Amadeus" style="width:100%">
+          <div class="container">
+            <h2>Sir Amadeus Esq.</h2>
+            <p class="title">Head Translator and Scholar</p>
+            <p>Sir Amadeus is an eclectic translator and exemplar scholar of this institute and archive. His work on early 16th century Elven culture has been some of the most important work done. His pursuit of knowledge above all else makes him an excellent role model for the aspiring scholar.</p>
+            <p>sir.amadeus.esq@example.com</p>
+            <p><a href="802537contact.html"><button class="button">Contact</button></a></p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="column">
+        <div class="card">
+          <img src="placeholder.jpg" alt="TBA" style="width:100%">
+          <div class="container">
+            <h2>Example Staff</h2>
+            <p class="title">Archive Staff</p>
+            <p>alan please hire more staff</p>
+            <p>example@contact.macguff.org</p>
+            <p><a href="802537contact.html"><button class="button">Contact</button></a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      Our work environment is one of the best. Our 100% Queer staffing provides quality cohesion that lubricates the flow of work.<br />If you are interested in becoming a part of the team, contact Sir Amadeus.
+    </p>
+  </div>
+</body>
