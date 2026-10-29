@@ -31,6 +31,38 @@ body {
   background-color: mediumvioletred;
   color: white;
 }
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 </style>
 </head>
 <body>
@@ -47,8 +79,35 @@ body {
     <h1>
       Contact
     </h1>
-    <p style="margin-right:40vw;">
-      We accept neither call nor email. To contact us, or book a consultation, Please head to our office at 105 George St, Ryde PO33 2JE, UK, adjacent to the Ryde library, or send us mail. Alternatively, we accept fax at 01983 802 537.
-    </p>
+    <div class="container">
+      <form action="action_page.php">
+    
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+        <label for="pron">Pronouns</label>
+        <input type="text" id="prn" name="pronoun" placeholder="Pronouns, please.">
+        
+        <label for="recip">Recipiant</label>
+        <select id="recip" name="recip">
+          <option value="sir.amadeus.esq@contact.macguff.org">Sir Amadeus Esq</option>
+          <option value="ash.e@contact.macguff.org">Ashley Venetia Ellsworth</option>
+          <option value="lol no">Secret third option</option>
+        </select>
+    
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Express your wishes or grievances to us." style="height:200px"></textarea>
+    
+        <input type="submit" value="Submit">
+    
+      </form>
+    </div>
+    <br /> <br /> <br />
+     <p>
+         Alternatively, Ashley is able to be contacted by her discord at saltwaterwoman, or by her personal email <em>teaontwitchistheainrl@gmail.com</em>.
+     </p> 
   </div>
 </body>
